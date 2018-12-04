@@ -16,4 +16,4 @@
 
 <p *ngIf="showSecret">this is secret password</p>
 
-<app-child-component *ngFor="let child of childs" [ngStyle]="{backgroundColor: child >= 5 ? 'blue' : 'transparent'}" [ngClass]="{'white-text': child >= 5}"></app-child-component>
+<app-child-component *ngFor="let child of childs; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}" [ngClass]="{'white-text': child >= 4}"></app-child-component>

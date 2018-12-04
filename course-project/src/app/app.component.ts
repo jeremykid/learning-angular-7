@@ -6,12 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-	showSecret = false;
-	childs = [];
-
-	onToggleDetails() {
-		this.showSecret = !this.showSecret;
-		//this.log,push(new Date)
-		this.childs.push(this.childs.length + 1);
-	}
+  title = 'course-project';
 }
